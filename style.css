@@ -1,0 +1,202 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== GLOBAL STYLES ===== */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #f8fbff, #dde9f3);
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+/* ===== CENTER CONTAINER ===== */
+body > * {
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  padding: 0 20px;
+}
+
+/* ===== HEADER STYLING ===== */
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #e74c3c;
+  margin-top: 30px;
+}
+
+#mainHeader {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  color: #34495e;
+  background-color: #ecf0f1;
+  border-left: 6px solid #3498db;
+  border-radius: 5px;
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav li a:hover {
+  background-color: #2980b9;
+  color: white;
+}
+
+/* ===== FEATURED SECTION ===== */
+.header {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  padding: 30px;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.header h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+/* ===== EVENT CARD ===== */
+.eventCard {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.eventCard:hover {
+  transform: translateY(-6px);
+}
+
+.eventCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  text-align: justify;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+/* ===== CTA BUTTON ===== */
+.cta-button {
+  padding: 12px 25px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1e8449;
+}
+
+/* ===== TABLE STYLES ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px 18px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f6faff;
+}
+
+/* ===== MULTI-COLUMN NEWS SECTION ===== */
+.news {
+  column-count: 2;
+  column-gap: 40px;
+  column-rule: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+/* ===== HIDDEN & NONE EXAMPLES ===== */
+.hidden {
+  visibility: hidden;
+}
+
+.none {
+  display: none;
+}
+
+/* ===== INPUT FIELD STYLING ===== */
+input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 20px auto;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: 2px solid #2980b9;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news {
+    column-count: 1;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  .eventCard {
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Community Event Portal</title>
+
+  <!-- Embedded CSS for background -->
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+  </style>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Inline CSS for red heading -->
+  <h1 style="color: red;">Welcome to the Community Portal</h1>
+
+  <!-- Header with ID selector -->
+  <h2 id="mainHeader">Upcoming Events</h2>
+
+  <!-- Navigation -->
+  <nav>
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section with Gradient -->
+  <section class="header">
+    <h3>Featured Section</h3>
+    <p>Latest announcements and featured highlights.</p>
+  </section>
+
+  <!-- Event Card with Box Model -->
+  <div class="eventCard">
+    <h3>Music Festival</h3>
+    <p class="description">Join us for a fun evening filled with live music and entertainment!</p>
+    <button class="cta-button">Register</button>
+  </div>
+
+  <!-- Zebra-striped Table -->
+  <table>
+    <tr>
+      <th>Event</th>
+      <th>Date</th>
+      <th>Location</th>
+    </tr>
+    <tr>
+      <td>Music Festival</td>
+      <td>June 20</td>
+      <td>Central Park</td>
+    </tr>
+    <tr>
+      <td>Art Fair</td>
+      <td>July 5</td>
+      <td>City Hall</td>
+    </tr>
+  </table>
+
+  <!-- News Section with Multi-column Layout -->
+  <section class="news">
+    <p>
+      The city council has announced new updates to the park facilities. Local residents are encouraged to participate in the feedback survey to improve community services.
+    </p>
+    <p>
+      Volunteers are welcome to join the upcoming clean-up drive this weekend. Refreshments will be provided, and all materials will be supplied on site.
+    </p>
+  </section>
+
+  <!-- Hidden vs Display Test -->
+  <div class="hidden">This is hidden using visibility</div>
+  <div class="none">This is hidden using display</div>
+
+  <!-- Input Field to Show Outline on Focus -->
+  <input type="text" placeholder="Highlight on focus">
+</body>
+</html>
